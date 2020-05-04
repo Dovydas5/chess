@@ -4,10 +4,25 @@
   box-sizing: border-box;
 }
 
-div {
+.chess {
   display: inline-block;
   width: 80vmin;
+  float: left;
+
   height: 80vmin;
   border: 5px solid black;
   margin: 10vmin calc(50% - 40vmin);
+}
+.chess > .row {
+  display: inline-block;
+  width: 100%;
+  height: 25%;
+  float: left;
+}
+.chess > .row > .cell {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+  float: left;
 }
